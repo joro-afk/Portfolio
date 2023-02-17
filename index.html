@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Portfolio/assets/styles/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header id="principal">
+      <nav>
+        <ul>
+          <li><a href="#first"> 1</a></li>
+          <li><a href="#second"> 2</a></li>
+          <li><a href="#third"> 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="first-section" id="first"></div>
+    </section>
+    <section>
+      <div class="second-section" id="second">
+        <div class="third-part left">
+          <div class="presentation">
+            <img src="/Portfolio/images/1st-web.jpg" class="presentation-img" />
+          </div>
+          <div class="material">
+            <div class="material-header">
+              <div class="title">Playstation Web Clone</div>
+              <div class="subtitle"></div>
+            </div>
+            <div class="material-content">
+              <div class="material-content-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus, sed et. Quod libero iure voluptatum, repellendus
+                voluptas esse eum enim dolorum natus reprehenderit veniam
+                provident sint deleniti corrupti illum quas!
+              </div>
+              <div class="material-content-tools">
+                <div class="container-tools-img">
+                  <img src="/Portfolio/images/html.png" class="tools-img" />
+                </div>
+                <div class="container-tools-img">
+                  <img src="/Portfolio/images/css.png" class="tools-img" />
+                </div>
+                <div class="container-tools-img">
+                  <img src="/Portfolio/images/js.png" class="tools-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="third-part center">
+          <div class="material">
+            <div class="material-header">
+              <div class="title">Music Web App</div>
+              <div class="subtitle"></div>
+            </div>
+            <div class="material-content">
+              <div class="material-content-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit dolore officiis id! Sit, officia. Numquam magnam ex,
+                repellendus quae quod earum voluptate? Sint dolorum
+                exercitationem vero incidunt fugiat, recusandae accusamus.
+              </div>
+              <div class="material-content-tools">
+                <div class="material-content-tools">
+                  <div class="container-tools-img">
+                    <img src="/Portfolio/images/html.png" class="tools-img" />
+                  </div>
+                  <div class="container-tools-img">
+                    <img src="/Portfolio/images/css.png" class="tools-img" />
+                  </div>
+                  <div class="container-tools-img">
+                    <img src="/Portfolio/images/js.png" class="tools-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="presentation">
+            <img src="/Portfolio/images/2d-web.jpg" class="presentation-img" />
+          </div>
+        </div>
+        <div class="third-part right">
+          <div class="presentation">
+            <img src="/Portfolio/images/3rd-web.jpg" class="presentation-img" />
+          </div>
+          <div class="material">
+            <div class="material-header">
+              <div class="title">Cinema Ticket Web App</div>
+              <div class="subtitle"></div>
+            </div>
+            <div class="material-content">
+              <div class="material-content-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                unde magni dicta ipsa magnam rerum obcaecati repellat distinctio
+                similique aut enim provident nam iusto, cum non. Tempora dolore
+                adipisci autem.
+              </div>
+              <div class="material-content-tools">
+                <div class="container-tools-img">
+                  <img src="/Portfolio/images/html.png" class="tools-img" />
+                </div>
+                <div class="container-tools-img">
+                  <img src="/Portfolio/images/css.png" class="tools-img" />
+                </div>
+                <div class="container-tools-img">
+                  <img src="/Portfolio/images/js.png" class="tools-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="third-section" id="third">
+        <div class="side-email-1">
+          <div>
+            <img src="/Portfolio/images/instagram.png" class="img-social" />
+          </div>
+          <div>
+            <img src="/Portfolio/images/facebook.png" class="img-social" />
+          </div>
+          <div>
+            <img src="/Portfolio/images/twitter.png" class="img-social" />
+          </div>
+          <div>
+            <img src="/Portfolio/images/linkedin.png" class="img-social" />
+          </div>
+          <div>
+            <img src="/Portfolio/images/github.png" class="img-social" />
+          </div>
+        </div>
+        <div class="contacto">
+          <form class="contact100-form" ref="form" @submit="sendEmail">
+            <div class="contact-form-title">
+              <span class="contact100-form-title"> Get in Touch </span>
+            </div>
+            <div class="wrap-input100">
+              <input
+                class="input100"
+                type="text"
+                ref="name"
+                id="name"
+                name="name"
+                placeholder="Name"
+              />
+              <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100">
+              <input
+                class="input100"
+                type="text"
+                ref="name"
+                id="name"
+                name="name"
+                placeholder="Email"
+              />
+              <span class="focus-input100"></span>
+            </div>
+            <ErrorMessage name="email" />
+            <div class="wrap-input100">
+              <textarea
+                class="input100"
+                ref="mensaje"
+                id="mensaje"
+                name="message"
+                placeholder="Message"
+              ></textarea>
+              <span class="focus-input100"></span>
+            </div>
+            <div class="container-contact100-form-btn">
+              <button class="contact100-form-btn" type="submit" value="Send">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"> </script>
+    <footer>
+      <h1>Designed and Built by <span>Joaquin Romero</span></h1>
+    </footer>
+  </body>
+</html>
