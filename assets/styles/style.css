@@ -55,6 +55,37 @@ body {
   background-color: #fcc055;
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-avatar {
+  width: 80%;
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  width: 50%;
+  height: 100%;
+  font-family: "headliner_no._45regular";
+}
+.profile > h1 {
+  font-size: 7rem;
+}
+
+.profile > h2 {
+  font-size: 3rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.avatar {
+  width: 50%;
+  height: 100%;
+  background-color: #cd9c5c;
 }
 
 .second-section {
@@ -66,18 +97,12 @@ body {
   align-items: center;
 }
 
-#myVideo {
-  position: absolute;
-  width: 100%;
-  top: 0;
-}
-
 .third-part {
   width: 31%;
   height: 100%;
   max-width: 400px;
   max-height: 850px;
-  aspect-ratio: 	19.5/9;
+  aspect-ratio: 19.5/9;
   margin: 1rem 0.5rem;
   border-radius: 1rem;
   background-color: transparent;
@@ -183,7 +208,7 @@ body {
   height: 48%;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   padding: 0 0.5rem;
   text-align: center;
 }
@@ -195,13 +220,13 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-.container-tools-img{
+.container-tools-img {
   width: 30%;
 }
 
-.tools-img {  
+.tools-img {
   width: 100%;
-  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%); 
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
 
 .third-section {
@@ -277,7 +302,7 @@ body {
 .wrap-input100 {
   width: 100%;
   position: relative;
-  background-color:#faeccf;
+  background-color: #faeccf;
   border-radius: 1.25rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
