@@ -13,3 +13,11 @@ window.onscroll = function () {
     }
   }
   
+  
+  document.getElementById("demo").addEventListener("click", myFunction);
+  
+  function myFunction() {
+    window.open("https://joro-afk-sony.netlify.app/");
+  }
+
+  
