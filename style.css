@@ -175,6 +175,10 @@ body {
   }
 }
 
+.web-links{
+  text-decoration:  none;
+}
+
 .left {
   position: relative;
 }
