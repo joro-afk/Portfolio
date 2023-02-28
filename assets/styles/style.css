@@ -67,15 +67,11 @@ body {
 }
 .profile-avatar {
   width: 80%;
-  height: 80%;
+  height: 90%;
 
   display: flex;
   justify-content: center;
 }
-
-
-
-
 
 .profile {
   width: 50%;
@@ -123,9 +119,17 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .img-avatar {
-  width: 100%;
+  width: 80%;
+}
+
+.img-avatar2 {
+  width: 20%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
 }
 
 .second-section {
