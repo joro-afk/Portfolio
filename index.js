@@ -14,6 +14,11 @@ window.onscroll = function () {
   }
   
   
+  document.getElementById("left").addEventListener("click", weblink);
+  
+  function weblink() {
+    window.open("https://joro-afk-sony.netlify.app/");
+  }
 
 
   
