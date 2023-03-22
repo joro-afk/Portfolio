@@ -151,7 +151,7 @@ ul {
 
 .first-section {
   position: relative;
-    min-height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(
     45deg,
     rgba(252, 192, 85, 1) 0%,
@@ -166,6 +166,7 @@ ul {
 }
 
 .profile-avatar {
+  min-height: 80vh;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -737,8 +738,6 @@ ul {
 }
 
 .material-content-tools {
-  /* height: 50%; */
-  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -767,7 +766,7 @@ ul {
 
 .third-section {
   position: relative;
-  min-height:100vh;
+  min-height:calc(100vh - 8rem);
   background: linear-gradient(
     305deg,
     rgba(92, 36, 0, 1) 0%,
