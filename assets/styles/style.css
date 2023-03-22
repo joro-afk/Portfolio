@@ -1022,6 +1022,12 @@ ul {
   }
 }
 
+@media only screen and (min-width: 1280px) and (max-width: 2559px) {
+  .contact100-form-title {
+    font-size: 8rem;
+  }
+}
+
 @media only screen and (min-width: 2560px) and (max-width: 3839px) {
   .contact100-form-title {
     font-size: 10rem;
