@@ -767,7 +767,7 @@ ul {
 
 .third-section {
   position: relative;
-
+  min-height:100vh;
   background: linear-gradient(
     305deg,
     rgba(92, 36, 0, 1) 0%,
