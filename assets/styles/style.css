@@ -575,18 +575,18 @@ ul {
 #left > .presentation > .presentation-img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  height: max-content;
+
 }
 
 #right > .presentation > .presentation-img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  height: max-content;
+
 }
 #center > .presentation > .presentation-img {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  height: max-content;
+
 }
 
 .material {
