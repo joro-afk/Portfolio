@@ -506,6 +506,7 @@ ul {
 
 .third-part {
   width: 31%;
+    height: 100vh;
   min-height: calc(100vh - 3rem);
   aspect-ratio: 19.5/9;
   margin: 1rem 0.5rem;
