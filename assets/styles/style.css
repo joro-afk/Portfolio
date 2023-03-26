@@ -701,7 +701,6 @@ ul {
 .material-content-text {
   font-family: "made_tommythin";
   font-size: 1.5rem;
-  /* height: 48%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -803,6 +802,7 @@ ul {
 }
 
 @media only screen and (min-width: 2560px) and (max-width: 3839px) {
+  
   .third-section {
     height: calc(100vh - 8rem);
   }
@@ -810,7 +810,7 @@ ul {
 
 @media only screen and (min-width: 3840px) {
   .third-section {
-    height: calc(var(--height) - 10rem);
+    height: calc(100vh - 10rem);
   }
 }
 
