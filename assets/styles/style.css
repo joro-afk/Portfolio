@@ -73,17 +73,21 @@ ul {
   margin-block-end: 0.3em;
 }
 
-
 @media only screen and (min-width: 400px) and (max-width: 1919px) {
   .parts-text {
     font-size: 1em;
-
   }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) and (max-width: 3839px) {
   .parts-text {
     font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 3840px) {
+  .parts-text {
+    font-size: 2em;
   }
 }
 
@@ -164,13 +168,13 @@ ul {
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .name {
-    font-size: 6em;
+    font-size: 5.3em;
   }
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
   .name {
-    font-size: 6em;
+    font-size: 5.5em;
   }
 }
 
@@ -309,8 +313,8 @@ ul {
 
 @media only screen and (min-width: 1280px) {
   .avatar-picture {
-    height: 60%;
-    width: 100%;
+    height: 50%;
+    width: auto;
     display: flex;
     justify-content: center;
   }
@@ -621,6 +625,7 @@ ul {
 }
 
 .material-header {
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -629,19 +634,20 @@ ul {
 
 .title {
   font-family: "headliner_no._45regular";
-  font-size: 3em;
+  font-size: 3.5em;
   color: #000;
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .title {
-    font-size: 3em;
-    text-align: center;
-  }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 480px) {
   .title {
     font-size: 2.7em;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 3em;
     text-align: center;
   }
 }
@@ -713,28 +719,28 @@ ul {
 
 @media only screen and (max-height: 768px) and (max-width: 1280px) {
   .material-content-text {
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
   }
 }
 
 @media only screen and (min-width: 1920px) and (max-width: 2559px) {
   .material-content-text {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
   }
 }
 
 @media only screen and (min-width: 2560px) and (max-width: 3839px) {
   .material-content-text {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
   }
 }
 
 @media only screen and (min-width: 3840px) {
   .material-content-text {
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
   }
 }
@@ -817,21 +823,6 @@ ul {
   justify-content: space-between;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .side-email-1 {
-    height: 50%;
-    top: 25%;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .side-email-1 {
-    height: 40%;
-    top: 30%;
-    left: 5%;
-  }
-}
-
 @media only screen and (min-width: 200px) and (max-width: 480px) {
   .side-email-1 {
     position: relative;
@@ -846,13 +837,35 @@ ul {
   }
 }
 
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .side-email-1 {
+    height: 40%;
+    top: 30%;
+    left: 5%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .side-email-1 {
+    height: 50%;
+    top: 25%;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+  .side-email-1 {
+    height: 60%;
+    top: 20%;
+  }
+}
+
 .img-social {
   width: 50%;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .img-social {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -877,7 +890,6 @@ ul {
   justify-content: center;
   align-items: center;
   width: 50%;
-
   background-color: #fff;
   padding: 3em;
   border-radius: 1em;
@@ -885,9 +897,10 @@ ul {
   box-shadow: 1em 1em 1em 0 rgba(15, 3, 3, 1);
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .contacto {
-    padding: 1em;
+    padding: 0.5em;
+    width: 80%;
   }
 }
 
@@ -898,10 +911,23 @@ ul {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .contacto {
-    padding: 0.5em;
-    width: 80%;
+    width: 60%;
+    padding: 1em;
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
+  .contacto {
+    padding: 1em;
+  }
+}
+
+@media only screen and (min-width: 3840px) {
+  .contacto {
+    width: 60%;
+    height: 80%;
   }
 }
 
@@ -980,7 +1006,19 @@ ul {
   }
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 2559px) {
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  .contact100-form-title {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1599px) {
+  .contact100-form-title {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 2559px) {
   .contact100-form-title {
     font-size: 8em;
   }
@@ -1014,18 +1052,10 @@ label {
   justify-content: space-evenly;
 }
 
-input {
-  height: 12rem;
-}
-
-textarea {
-  min-height: 17rem;
-}
-
 input,
 textarea {
   font-family: "vanilla whale";
-  font-size: 1em;
+  font-size: 1.3em;
   border-radius: 0.5rem;
   outline: none;
   border: none;
@@ -1033,36 +1063,76 @@ textarea {
   margin-bottom: 1rem;
   padding-left: 0.5em;
   padding-top: 0.1em;
+  height: 3rem;
 }
 
-@media only screen and (min-width: 1600px) and (max-width: 1919px) {
-  input,
-  textarea {
+@media only screen and (min-width: 1280px) and (max-width: 1599px) {
+  input {
     height: 4rem;
     font-size: 2em;
   }
 }
 
-@media only screen and (min-width: 1920px) and (max-width: 2559px) {
-  input,
+@media only screen and (min-width: 1280px) and (max-width: 1599px) {
   textarea {
     height: 6rem;
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+  input {
+    height: 4rem;
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+  textarea {
+    height: 6rem;
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+  input {
+    height: 6rem;
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+  textarea {
+    height: 8rem;
     font-size: 3em;
   }
 }
 
 @media only screen and (min-width: 2560px) and (max-width: 3839px) {
-  input,
-  textarea {
+  input {
     height: 8rem;
-    font-size: 4em;
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 2560px) and (max-width: 3839px) {
+  textarea {
+    height: 12rem;
+    font-size: 3em;
   }
 }
 
 @media only screen and (min-width: 3840px) {
-  input,
+  input {
+    font-size: 4em;
+    height: 10rem;
+  }
+}
+
+@media only screen and (min-width: 3840px) {
   textarea {
     font-size: 4em;
+    height: 15rem;
   }
 }
 
@@ -1096,6 +1166,12 @@ textarea:hover {
   }
 }
 
+@media only screen and (min-width: 3840px) {
+  .button-area {
+    margin-top: 2rem;
+  }
+}
+
 button {
   border-radius: 0.5em;
   outline: none;
@@ -1103,8 +1179,14 @@ button {
   background: #eeeeee;
   padding: 0.5em;
   font-family: "vanilla whale";
-  font-size: 4em;
+  font-size: 1.5em;
   margin-top: 2rem;
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+  button {
+    font-size: 2em;
+  }
 }
 
 @media only screen and (min-width: 1920px) and (max-width: 2559px) {
@@ -1113,9 +1195,15 @@ button {
   }
 }
 
-@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+@media only screen and (min-width: 2560px) and (min-width: 3839px) {
   button {
-    font-size: 2em;
+    font-size: 3.5em;
+  }
+}
+
+@media only screen and (min-width: 3840px) {
+  button {
+    font-size: 4em;
   }
 }
 
