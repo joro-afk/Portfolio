@@ -1,3 +1,18 @@
+
+
+let w = window.innerWidth;
+let h = window.innerHeight;
+document.getElementById("medidas").innerHTML = "Width: " + w + "<br>Height: " + h;
+
+document.documentElement.style.setProperty("--width", w + "px"); 
+document.documentElement.style.setProperty("--height", h + "px"); 
+
+
+
+
+
+
+
 window.onscroll = function () {
     myFunction();
   };
