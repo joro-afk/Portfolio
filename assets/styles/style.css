@@ -100,7 +100,7 @@ ul {
       rgba(252, 192, 85, 1) 0%,
       rgb(253, 217, 29) 73%,
       rgba(255, 255, 255, 1) 100%); */
-  background-image: url(/Portfolio/images/background.png);
+  background-image: url(/images/background.png);
   width: 100vw;
   display: flex;
   justify-content: center;
