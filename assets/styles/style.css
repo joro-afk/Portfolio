@@ -915,7 +915,7 @@ ul {
 
 .contacto {
   width: 90%;
-  background-image: url("/Portfolio/images/back.jpg");
+  background-image: url("/images/back.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
