@@ -96,10 +96,11 @@ ul {
 .first-section {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(45deg,
+  /* background: linear-gradient(45deg,
       rgba(252, 192, 85, 1) 0%,
-      rgba(253, 217, 29, 1) 73%,
-      rgba(255, 255, 255, 1) 100%);
+      rgb(253, 217, 29) 73%,
+      rgba(255, 255, 255, 1) 100%); */
+  background-image: url(/Portfolio/images/background.png);
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -615,8 +616,8 @@ ul {
   flex-direction: column;
   justify-content: center;
   margin: 0 0.5em 2em 0.5em;
-
 }
+
 
 
 
@@ -644,13 +645,9 @@ ul {
   }
 }
 
-.third-part:hover {
-  transform: scale(1.02);
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .third-part:hover {
-    transform: scale(1.03);
+@media only screen and (min-height: 800px) {
+  .third-part {
+    min-height: 70%;
   }
 }
 
@@ -749,6 +746,7 @@ ul {
   font-family: "headliner_no._45regular";
   font-size: 1em;
   color: #000;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 640px) and (max-height: 640px) {
@@ -906,20 +904,9 @@ ul {
 }
 
 .img-social {
-  width: 80%;
+  width: 25%;
 }
 
-@media only screen and (min-width: 641px) and (max-height: 640px) {
-  .img-social {
-    width: 40%;
-  }
-}
-
-@media only screen and (min-width: 900px) and (min-height: 641px) {
-  .img-social {
-    width: 50%;
-  }
-}
 
 .img-social-container {
   display: flex;
@@ -928,12 +915,12 @@ ul {
 
 .contacto {
   width: 90%;
-  background-image: url("/images/back.jpg");
+  background-image: url("/Portfolio/images/back.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1em;
+  border-radius: 0.5rem;
   transition: all 0.5s ease-in-out;
   box-shadow: 1em 1em 1em 0 rgba(15, 3, 3, 1);
   padding: 1rem 0 1rem 0;
@@ -1080,10 +1067,10 @@ input,
 textarea {
   font-size: 0.8em;
   font-family: Arial, Helvetica, sans-serif;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   outline: none;
   border: none;
-  background-color: #fafae4;
+  background-color: #fff;
   margin-bottom: 0.5rem;
   padding-left: 0.5em;
   padding-top: 0.1em;
@@ -1124,7 +1111,7 @@ input:hover {
   -webkit-box-shadow: 0.2em 0.2em 0.2em 0 rgba(15, 3, 3, 1);
   -o-box-shadow: 0.2em 0.2em 0.2em 0 rgba(15, 3, 3, 1);
   -ms-box-shadow: 0.2em 0.2em 0.2em 0 rgba(15, 3, 3, 1);
-  background-color: #fff;
+
 }
 
 textarea:hover {
@@ -1133,7 +1120,7 @@ textarea:hover {
   -webkit-box-shadow: 0.2em 0.2em 0.2em 0 rgba(15, 3, 3, 1);
   -o-box-shadow: 0.2em 0.2em 0.2em 0 rgba(15, 3, 3, 1);
   -ms-box-shadow: 0.2em 0.2em 0.2em 0 rgba(15, 3, 3, 1);
-  background-color: #fff;
+
 }
 
 .button-area {
@@ -1146,29 +1133,28 @@ button {
   border-radius: 0.5em;
   outline: none;
   border: none;
-  background: #eeeeee;
+  background: #fff;
   padding: 0.2em;
   font-family: 'Sophia Nubian Regular';
-  font-size: 1em;
+  font-size: 0.5em;
   margin-top: 1rem;
 }
 
 @media only screen and (min-width: 641px) and (min-height: 641px) and (max-height: 1920px) {
   button {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 
 @media only screen and (min-width: 1280px) and (min-height: 641px) and (max-height: 1920px) {
   button {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #fcc055;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 footer {
