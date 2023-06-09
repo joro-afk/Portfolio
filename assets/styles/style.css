@@ -96,7 +96,7 @@ ul {
 .first-section {
   position: relative;
   min-height: 100vh;
-  background-image: url(/Portfolio/images/background.png);
+  background-image: url(/images/background.png);
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -839,7 +839,7 @@ ul {
 .third-section {
   position: relative;
 
-      background-image: url(/Portfolio/images/backcloud.svg);
+      background-image: url(/images/backcloud.svg);
  background-size: cover;
   width: 100%;
   min-height: 100vh;
@@ -896,7 +896,7 @@ ul {
 
 .contacto {
   width: 90%;
-  background-image: url("/Portfolio/images/back.jpg");
+  background-image: url("/images/back.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
