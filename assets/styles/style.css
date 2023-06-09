@@ -838,10 +838,8 @@ ul {
 
 .third-section {
   position: relative;
-  background: linear-gradient(305deg,
-      rgba(92, 36, 0, 1) 0%,
-      rgba(226, 44, 2, 1) 47%,
-      rgba(226, 190, 137, 1) 100%);
+      background-image: url(/images/backcloud.svg);
+ background-size: cover;
   width: 100%;
   min-height: 100vh;
   display: flex;
