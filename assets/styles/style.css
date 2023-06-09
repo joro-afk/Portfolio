@@ -837,15 +837,17 @@ ul {
   }
 }
 
-.button-link{
+.webs-link{
   width: 20%;
-  max-width: 5rem;
   align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button-link > a{
-  text-decoration: none;
-  color: #000;
+
+.arrow-link{
+  height: 1.5rem;
 }
 
 .third-section {
