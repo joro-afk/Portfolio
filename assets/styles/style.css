@@ -34,6 +34,11 @@ body {
   margin-inline-end: 0.5rem;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
   margin-block-start: 0;
@@ -43,10 +48,6 @@ ul {
 .parts>a:link {
   text-decoration: none;
   font-family: "headliner_no._45regular";
-}
-
-.parts>a {
-  color: #000;
 }
 
 .parts>a:hover {
@@ -96,7 +97,7 @@ ul {
 .first-section {
   position: relative;
   min-height: 100vh;
-  background-image: url(/images/background.png);
+  background-image: url(/Portfolio/images/background.png);
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -852,7 +853,7 @@ ul {
 
 .third-section {
   position: relative;
-  background-image: url(/images/backcloud.svg);
+  background-image: url(/Portfolio/images/backcloud.svg);
   background-size: cover;
   width: 100%;
   min-height: 100vh;
@@ -893,23 +894,23 @@ ul {
 
 @media only screen and (min-width: 641px) and (min-height: 641px) {
   .side-email-1 {
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
   }
 }
 
-.side-email-1 > a{
+.side-email-1>a {
   height: 100%;
 }
 
-.img-social{
+.img-social {
   height: 100%;
 }
 
 
 .contacto {
   width: 90%;
-  background-image: url("/images/back.jpg");
+  background-image: url("/Portfolio/images/back.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -1088,6 +1089,7 @@ textarea {
 }
 
 @media only screen and (min-width: 1280px) and (min-height: 1920px) {
+
   input,
   textarea {
     padding: 1.5rem;
