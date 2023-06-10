@@ -19,13 +19,20 @@ window.onload = function () {
     .addEventListener("submit", function (event) {
       event.preventDefault();
       this.contact_number.value = (Math.random() * 100000) | 0;
-      emailjs.sendForm("service_cq1el85", "template_4kdp6tb", this).then(
-        function () {
-          console.log("SUCCESS!");
-        },
-        function (error) {
-          console.log("FAILED...", error);
-        }
-      );
+      let name = this.user_name.value,
+        email = this.user_email.value,
+        message = this.message.value;
+      if (name.length > 0 && email.length > 0 && message.length > 0) {
+        emailjs.sendForm("service_v17v61p", "template_m5g6qo9", this).then(
+          function () {
+            console.log("SUCCESS!");
+          },
+          function (error) {
+            console.log("FAILED...", error);
+          }
+        );
+      } else {
+        alert("Your data is not complete");
+      }
     });
 };
