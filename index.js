@@ -23,14 +23,8 @@ window.onload = function () {
         email = this.user_email.value,
         message = this.message.value;
       if (name.length > 0 && email.length > 0 && message.length > 0) {
-        emailjs.sendForm("service_v17v61p", "template_m5g6qo9", this).then(
-          function () {
-            console.log("SUCCESS!");
-          },
-          function (error) {
-            console.log("FAILED...", error);
-          }
-        );
+        emailjs.sendForm("service_v17v61p", "template_m5g6qo9", this);
+        document.getElementById("contact-form").reset();
       } else {
         alert("Your data is not complete");
       }
