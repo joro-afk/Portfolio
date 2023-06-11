@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+P {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
   margin-block-start: 0;
@@ -97,7 +101,7 @@ ul {
 .first-section {
   position: relative;
   min-height: 100vh;
-  background-image: url(/images/background.png);
+  background-image: url(/Portfolio/images/background.png);
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -838,7 +842,7 @@ ul {
   }
 }
 
-.webs-link{
+.webs-link {
   width: 20%;
   align-self: center;
   display: flex;
@@ -847,13 +851,13 @@ ul {
 }
 
 
-.arrow-link{
+.arrow-link {
   height: 1.5rem;
 }
 
 .third-section {
   position: relative;
-  background-image: url(/images/backcloud.svg);
+  background-image: url(/Portfolio/images/backcloud.svg);
   background-size: cover;
   width: 100%;
   min-height: 100vh;
@@ -910,7 +914,7 @@ ul {
 
 .contacto {
   width: 90%;
-  background-image: url("/images/back.jpg");
+  background-image: url("/Portfolio/images/back.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -1118,6 +1122,20 @@ textarea:hover {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.button-area1 {
+  justify-content: space-between;
+}
+
+
+
+
+.button-area-text {
+  font-size: 1em;
+  font-family: 'Sophia Nubian Regular';
+  font-weight: 400;
 }
 
 button {
