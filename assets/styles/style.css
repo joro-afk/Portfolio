@@ -1321,4 +1321,6 @@ footer {
   height: calc(2rem - 1px);
   width: 100vw;
   text-align: center;
+    display: flex;
+  justify-content: center;
 }
