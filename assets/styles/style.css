@@ -922,7 +922,7 @@ ul {
 
 .third-section {
   position: relative;
-  background-image: url(/images/backcloud.svg);
+  background-image: url(/images/backcloud.png);
   background-size: cover;
   width: 100%;
   min-height: calc(100vh - (2rem - 1px));
