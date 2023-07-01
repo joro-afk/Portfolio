@@ -997,7 +997,7 @@ ul {
 
 .contacto {
   width: 90%;
-  background-image: url("/images/back.jpg");
+  background-image: url("/images/back.png");
   background-size: cover;
   display: flex;
   justify-content: center;
