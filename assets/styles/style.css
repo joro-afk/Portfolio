@@ -335,6 +335,10 @@ h1 {
   }
 }
 
+.third-part:hover {
+  box-shadow: .5em .5em .5em 0 rgba(226, 190, 137, 255);
+}
+
 .material {
   position: relative;
   padding: 1rem 0;
@@ -400,6 +404,17 @@ h1 {
   }
 }
 
+.button-link-container {
+  background-color: transparent;
+  padding: 2px;
+  border-radius: .5rem;
+  border: solid 2px transparent;
+}
+
+.button-link-container:hover {
+  border: solid 2px #000;
+}
+
 .webs-link {
   text-decoration: none;
 }
@@ -417,11 +432,6 @@ h1 {
   justify-content: center;
 }
 
-.button-link:hover {
-  outline: solid #000 2px;
-  outline-offset: 2px;
-}
-
 .arrow-link {
   height: 1rem;
 }
@@ -436,12 +446,12 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y:top;
+  background-position-y: top;
   border-bottom-left-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
 }
 
-.img-webs-container-second{
+.img-webs-container-second {
   background-position-y: center;
 }
 
@@ -616,12 +626,6 @@ textarea:hover {
   textarea {
     font-size: 1em;
   }
-}
-
-.button-contact:hover {
-  cursor: pointer;
-  outline: #000 solid 2px;
-  outline-offset: 2px;
 }
 
 footer {
