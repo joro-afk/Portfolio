@@ -337,6 +337,15 @@ h1 {
 
 .third-part:hover {
   box-shadow: .5em .5em .5em 0 rgba(226, 190, 137, 255);
+
+  .material {
+    background-color: #000;
+  }
+
+  .title,
+  .material-content-text {
+    color: #fff;
+  }
 }
 
 .material {
@@ -362,7 +371,6 @@ h1 {
 .title {
   font-family: "headliner_no._45regular";
   font-size: 2em;
-  color: #000;
   margin-bottom: 1rem;
 }
 
@@ -412,14 +420,19 @@ h1 {
 }
 
 .button-link-container:hover {
-  border: solid 2px #000;
+  border: solid 2px #fff;
 }
 
 .webs-link {
   text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
 }
 
 .button-link {
+
+  color: #000;
   width: 4rem;
   border-radius: 0.3rem;
   border: 1px solid #fff;
@@ -433,6 +446,7 @@ h1 {
 }
 
 .arrow-link {
+  margin-inline-start: 2px;
   height: 1rem;
 }
 
@@ -626,6 +640,11 @@ textarea:hover {
   textarea {
     font-size: 1em;
   }
+}
+
+.button-contact:hover{
+  outline: 2px #000 solid;
+  outline-offset: 2px;
 }
 
 footer {
