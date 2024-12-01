@@ -1,7 +1,9 @@
+/* General Styling for Images */
+/* Global Font Settings */
 @font-face {
   font-family: "headliner_no._45regular";
   src: url("headlinerno.45_demo.woff2") format("woff2"),
-    url("headlinerno.45_demo.woff") format("woff");
+       url("headlinerno.45_demo.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -9,37 +11,40 @@
 @font-face {
   font-family: "made_tommythin";
   src: url("made_tommy_thin_personal_use-webfont.woff2") format("woff2"),
-    url("made_tommy_thin_personal_use-webfont.woff") format("woff");
+       url("made_tommy_thin_personal_use-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-body,
-p,
-h1 {
+/* General Body Styles */
+body, p, h1 {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .sticky {
   position: fixed !important;
 }
 
+/* First Section */
 .first-section {
   position: relative;
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
 }
 
-@media only screen and (min-height: 768px) {
+@media (min-width: 768px) {
   .first-section {
-    min-height: auto;
-    padding: 1rem 2rem 1rem 2rem;
+    flex-direction: row;
+    padding: 1rem 2rem;
   }
 }
 
+/* Profile Avatar */
 .profile-avatar {
   display: flex;
   flex-direction: column;
@@ -48,133 +53,46 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-@media only screen and (min-width:346px) {
+@media (min-width: 346px) {
   .profile-avatar {
-    display: flex;
     flex-direction: row;
   }
 }
 
-@media only screen and (min-height: 640px) {
-  .profile-avatar {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
+/* Profile Section */
 .profile {
   font-family: "made_tommythin";
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-
-@media only screen and (min-width:479px) {
-  .profile {
-    margin-right: 1rem;
-  }
-}
-
-@media only screen and (min-width:300px) and (min-height: 640px) {
-  .profile {
-    margin-bottom: 1rem;
-  }
-}
-
-@media only screen and (min-width:479px) and (min-height: 640px) {
-  .profile {
-    margin-right: 0;
-  }
+  align-items: center;
 }
 
 .name {
   font-size: 1.75em;
-  margin-block-end: 1.5rem;
-  margin-block-start: 0.5rem;
+  margin-block: 0.5rem 1.5rem;
   max-width: 350px;
-}
-
-@media only screen and (min-height: 480px) {
-  .name {
-    font-size: 2em;
-  }
-}
-
-@media only screen and (min-height: 640px) {
-  .name {
-    max-width: none;
-  }
-}
-
-@media only screen and (min-width:390px) {
-  .name {
-    font-size: 2em;
-  }
-}
-
-@media only screen and (min-width:347px) and (min-height:480px) {
-  .name {
-    font-size: 2.5em;
-  }
-}
-
-@media only screen and (min-width:600px) and (min-height:480px) {
-  .name {
-    font-size: 3em;
-  }
-}
-
-@media only screen and (min-width:600px) and (min-height:640px) {
-  .name {
-    font-size: 3rem;
-  }
+  text-align: center;
 }
 
 .description {
-  font-size: .8em;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  font-size: 0.8em;
+  margin: 0;
   max-width: 300px;
+  text-align: center;
 }
 
-@media only screen and (min-height:480px) {
-  .description {
-    font-size: 1em;
-  }
+@media (min-width: 480px) {
+  .name { font-size: 2em; }
+  .description { font-size: 1em; }
 }
 
-@media only screen and (min-height: 640px) {
-  .description {
-    max-width: none;
-  }
+@media (min-width: 600px) {
+  .name { font-size: 3rem; }
+  .description { font-size: 1.25em; }
 }
 
-@media only screen and (min-width:390px) {
-  .description {
-    font-size: 1em;
-  }
-}
-
-@media only screen and (min-width:347px) and (min-height:480px) {
-  .description {
-    font-size: 1.1em;
-  }
-}
-
-@media only screen and (min-width:600px) and (min-height:480px) {
-  .description {
-    font-size: 1.25em;
-  }
-}
-
-
-@media only screen and (min-width:600px) and (min-height:640px) {
-  .description {
-    font-size: 1.25em;
-  }
-}
-
+/* Avatar Image */
 .avatar {
   display: flex;
   flex-direction: column;
@@ -182,295 +100,66 @@ h1 {
   align-items: center;
 }
 
-
-@media only screen and (min-width:768px) {
+@media (min-width: 768px) {
   .avatar {
     flex-direction: row;
-  }
-}
-
-.avatar-picture {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media only screen and (min-width:768px) {
-  .avatar-picture {
-    margin: 0 1rem;
   }
 }
 
 .img-avatar {
   width: 13rem;
   margin-bottom: 1rem;
+  height: auto;
+  max-width: 100%;
 }
 
-@media only screen and (min-height:361px) {
-
+@media (min-height: 361px) {
   .img-avatar {
     width: 15rem;
   }
 }
 
+/* Skills Section */
 .skills-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .skills-title {
   font-family: "made_tommythin";
-  font-size: 1em;
+  font-size: 1.25em;
   text-align: center;
-  margin-block-start: 0rem;
-  margin-block-end: 1rem;
-}
-
-@media only screen and (min-height:480px) {
-  .skills-title {
-    font-size: 1.25em;
-  }
-}
-
-@media only screen and (min-width:768px) {
-  .skills-title {
-    font-size: 1.5em;
-  }
-}
-
-@media only screen and (min-width:768px) and (min-height:480px) {
-  .skills-title {
-    font-size: 1.5em;
-  }
+  margin: 0 0 1rem;
 }
 
 .skills {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  column-gap: 0.2rem;
-  row-gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
   padding: 0.2rem;
 }
 
-
-@media only screen and (min-width:768px) {
+@media (min-width: 768px) {
   .skills {
-    column-gap: 0.5rem;
-    row-gap: 0.75rem;
+    gap: 1rem;
   }
 }
 
-@media only screen and (min-width:300px) and (min-height: 640px) {
-  .skills {
-    column-gap: 0.75rem;
-    row-gap: 1rem;
-  }
-}
-
-.img-avatar-2 {
-  width: 2rem;
-}
-
-@media only screen and (min-width:768px) {
-  .img-avatar-2 {
-    width: 2.5rem;
-  }
-}
-
-@media only screen and (min-width:500px) and (min-height:480px) {
-  .img-avatar-2 {
-    width: 2.5rem;
-  }
-}
-
-@media only screen and (min-width:300px) and (min-height: 640px) {
-  .img-avatar-2 {
-    width: 2.5rem;
-  }
-}
-
-.second-section {
-  position: relative;
-  width: calc(100vw - 1.5rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #fff;
-  padding: 0 0.75rem 1rem 0.75rem;
-}
-
-@media only screen and (min-width:1024px) {
-  .second-section {
-    flex-direction: row;
-  }
-}
-
-.third-part {
-  width: 100%;
-  border-radius: 1em;
-  transition: all 0.5s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 1rem 0;
-  position: relative;
-  box-shadow: .5em .5em .5em 0 rgba(15, 3, 3, 1);
-}
-
-@media only screen and (min-width:768px)and (max-width:1023px) {
-  .third-part {
-    width: 80%;
-  }
-}
-
-@media only screen and (min-width:1024px) {
-  .third-part {
-    width: 32%;
-    justify-content: space-between;
-    min-height: 32rem;
-  }
-}
-
-.third-part:hover {
-  box-shadow: .5em .5em .5em 0 rgba(226, 190, 137, 255);
-
-  .material {
-    background-color: #000;
-  }
-
-  .title,
-  .material-content-text {
-    color: #fff;
-  }
-}
-
-.material {
-  position: relative;
-  padding: 1rem 0;
-  background-color: #FDE100;
-  border-radius: 0.8rem 0.8rem 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.material-header {
-  margin-top: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  font-family: "headliner_no._45regular";
-  font-size: 2em;
-  margin-bottom: 1rem;
-}
-
-@media only screen and (min-width:346px) {
-
-  .title {
-    font-size: 2.5em;
-  }
-}
-
-@media only screen and (min-width:768px) {
-
-  .title {
-    font-size: 2.75em;
-  }
-}
-
-.material-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.material-content-text {
-  font-family: "made_tommythin";
-  font-size: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 0.5em;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-@media only screen and (min-width:400px) {
-
-  .material-content-text {
-    font-size: 1.25em;
-  }
-}
-
-.button-link-container {
-  background-color: transparent;
-  padding: 2px;
-  border-radius: .5rem;
-  border: solid 2px transparent;
-}
-
-.button-link-container:hover {
-  border: solid 2px #fff;
-}
-
-.webs-link {
-  text-decoration: none;
-  color: #000;
-  display: flex;
-  align-items: center;
-}
-
-.button-link {
-
-  color: #000;
-  width: 4rem;
-  border-radius: 0.3rem;
-  border: 1px solid #fff;
-  background: #fff;
-  padding: 0.25em;
-  font-family: "made_tommythin";
-  font-size: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.arrow-link {
-  margin-inline-start: 2px;
-  height: 1rem;
-}
-
+/* Web Containers Styling */
 .img-webs-container-first,
 .img-webs-container-second,
 .img-webs-container-third {
   width: 100%;
-  height: 100%;
-  min-height: 12rem;
-  background-image: url(/images/1st-web.png);
+  height: auto;
   background-size: cover;
+  background-position: center;
+  border-radius: 0.8rem;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: top;
-  border-bottom-left-radius: 0.8rem;
-  border-bottom-right-radius: 0.8rem;
 }
 
-.img-webs-container-second {
-  background-position-y: center;
-}
-
-@media only screen and (min-width:600px)and (max-width:1023px) {
-
+@media (min-width: 600px) {
   .img-webs-container-first,
   .img-webs-container-second,
   .img-webs-container-third {
@@ -478,53 +167,40 @@ h1 {
   }
 }
 
+@media (min-width: 1024px) {
+  .img-webs-container-first,
+  .img-webs-container-second,
+  .img-webs-container-third {
+    min-height: 20rem;
+  }
+}
+
+.img-webs-container-first {
+  background-image: url("/images/1st-web.png");
+}
+
 .img-webs-container-second {
-  background-image: url(/images/2nd-web.png);
+  background-image: url("/images/2nd-web.png");
 }
 
 .img-webs-container-third {
-  background-image: url(/images/3rd-web.png);
+  background-image: url("/images/3rd-web.png");
 }
 
+/* Third Section */
 .third-section {
   position: relative;
-  background-image: url(/images/backcloud.png);
-  background-position-y: bottom;
+  background-image: url("/images/backcloud.png");
+  background-position: bottom;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem .75rem;
-
+  padding: 1rem 0.75rem;
 }
 
-.side-email-1 {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 25rem;
-  margin-bottom: 0.5rem;
-}
-
-@media only screen and (min-height:500px) {
-
-  .side-email-1> {
-    width: 50%;
-  }
-}
-
-.side-email-1>a {
-  height: 3rem;
-}
-
-.img-social {
-  height: 3rem;
-}
-
+/* Contact Section */
 .contacto {
   width: 100%;
   max-width: 45rem;
@@ -535,16 +211,16 @@ h1 {
   align-items: center;
   border-radius: 0.5rem;
   transition: all 0.5s ease-in-out;
-  box-shadow: 1em 1em 1em 0 rgba(15, 3, 3, 1);
   padding: 1.5rem 0;
+  box-shadow: 1em 1em 1em rgba(15, 3, 3, 1);
 }
 
-
 .contacto:hover {
-  box-shadow: 5em 5em 5em 0 rgba(15, 3, 3, 1);
+  box-shadow: 5em 5em 5em rgba(15, 3, 3, 1);
   transform: scale(1.01);
 }
 
+/* Contact Form Styling */
 #contact-form {
   width: 90%;
 }
@@ -558,97 +234,51 @@ h1 {
   font-family: "made_tommythin";
   font-size: 2em;
   color: #512906;
-  margin-block-start: 0em;
-  margin-block-end: 1rem;
-}
-
-@media only screen and (min-height:640px) {
-  .contact-form-title {
-    font-size: 2.25em;
-  }
-}
-
-label {
-  display: none;
-}
-
-.contact-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  margin: 0 0 1rem;
 }
 
 input,
 textarea {
-  font-size: 0.6em;
+  font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0.3rem;
   outline: none;
   border: none;
   background-color: #fff;
   margin-bottom: 0.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 textarea {
   min-height: 4rem;
 }
 
-input:hover {
-  box-shadow: 0.2em 0.2em 0.2em 0 rgba(15, 3, 3, 1);
-}
-
+input:hover,
 textarea:hover {
-  box-shadow: 0.2em 0.2em 0.2em 0 rgba(15, 3, 3, 1);
-}
-
-.button-area {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button-area1 {
-  justify-content: space-between;
-}
-
-.button-area-text {
-  font-size: 1em;
-  font-family: "made_tommythin";
-  font-weight: 400;
+  box-shadow: 0.2em 0.2em 0.2em rgba(15, 3, 3, 1);
 }
 
 .button-contact {
   color: #000;
   border-radius: 0.3rem;
-  outline: none;
   border: 1px solid #fff;
   background: #fff;
   padding: 0.2em;
   font-family: "made_tommythin";
-  font-size: 0.75em;
+  font-size: 1em;
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
-@media only screen and (min-height:480px) {
-
-  .button-contact,
-  input,
-  textarea {
-    font-size: 1em;
+@media (min-width: 480px) {
+  .button-contact {
+    font-size: 1.25em;
   }
 }
 
-.button-contact:hover{
-  outline: 2px #000 solid;
-  outline-offset: 2px;
-}
-
+/* Footer Styling */
 footer {
-  font-size: 0.5em;
+  font-size: 0.75em;
   font-family: "made_tommythin";
   position: relative;
   background-color: #fff;
