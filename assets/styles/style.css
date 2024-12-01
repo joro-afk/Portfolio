@@ -106,8 +106,8 @@ body, p, h1 {
   }
 }
 
-.img-avatar {
-  width: 13rem;
+.img-avatar, .img-avatar-2, .img-social {
+  width: 8rem;
   margin-bottom: 1rem;
   height: auto;
   max-width: 100%;
@@ -115,7 +115,7 @@ body, p, h1 {
 
 @media (min-height: 361px) {
   .img-avatar {
-    width: 15rem;
+    width: 13rem;
   }
 }
 
