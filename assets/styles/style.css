@@ -3,7 +3,7 @@
 @font-face {
   font-family: "headliner_no._45regular";
   src: url("headlinerno.45_demo.woff2") format("woff2"),
-       url("headlinerno.45_demo.woff") format("woff");
+    url("headlinerno.45_demo.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,22 +11,18 @@
 @font-face {
   font-family: "made_tommythin";
   src: url("made_tommy_thin_personal_use-webfont.woff2") format("woff2"),
-       url("made_tommy_thin_personal_use-webfont.woff") format("woff");
+    url("made_tommy_thin_personal_use-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-/* General Body Styles */
-body, p, h1 {
+body,
+p,
+h1 {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.sticky {
-  position: fixed !important;
-}
-
-/* First Section */
 .first-section {
   position: relative;
   display: flex;
@@ -44,7 +40,6 @@ body, p, h1 {
   }
 }
 
-/* Profile Avatar */
 .profile-avatar {
   display: flex;
   flex-direction: column;
@@ -59,7 +54,6 @@ body, p, h1 {
   }
 }
 
-/* Profile Section */
 .profile {
   font-family: "made_tommythin";
   display: flex;
@@ -83,16 +77,23 @@ body, p, h1 {
 }
 
 @media (min-width: 480px) {
-  .name { font-size: 2em; }
-  .description { font-size: 1em; }
+  .name {
+    font-size: 2em;
+  }
+  .description {
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 600px) {
-  .name { font-size: 3rem; }
-  .description { font-size: 1.25em; }
+  .name {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.25em;
+  }
 }
 
-/* Avatar Image */
 .avatar {
   display: flex;
   flex-direction: column;
@@ -106,7 +107,9 @@ body, p, h1 {
   }
 }
 
-.img-avatar, .img-avatar-2, .img-social {
+.img-avatar,
+.img-avatar-2,
+.img-social {
   width: 8rem;
   margin-bottom: 1rem;
   height: auto;
@@ -119,7 +122,6 @@ body, p, h1 {
   }
 }
 
-/* Skills Section */
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -187,7 +189,6 @@ body, p, h1 {
   background-image: url("/images/3rd-web.png");
 }
 
-/* Third Section */
 .third-section {
   position: relative;
   background-image: url("/images/backcloud.png");
@@ -200,7 +201,6 @@ body, p, h1 {
   padding: 1rem 0.75rem;
 }
 
-/* Contact Section */
 .contacto {
   width: 100%;
   max-width: 45rem;
@@ -220,7 +220,6 @@ body, p, h1 {
   transform: scale(1.01);
 }
 
-/* Contact Form Styling */
 #contact-form {
   width: 90%;
 }
@@ -276,7 +275,6 @@ textarea:hover {
   }
 }
 
-/* Footer Styling */
 footer {
   font-size: 0.75em;
   font-family: "made_tommythin";
